@@ -20,7 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad3c44a9-d861-4c5e-8dc9-72e51ac799d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Base.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Base/MonoSingleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Base/MonoSingleton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IEventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IEventBus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IServiceLocator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IServiceLocator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ContractAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ContractAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ServiceAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ServiceAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/EventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/EventBus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/ServiceLocator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/ServiceLocator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/World.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersistentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PersistentScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PersistentSceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PersistentSceneLoader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +57,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/701F6580-ABAD-44CF-B237-A543DCD0D94B/df/71cdc154/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PersistentSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PersistentSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Base/MonoSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/Contract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/GameMaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ContractAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/ServiceAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Attributes/SingletonAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IEventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/Abstract/IServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/ServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/SceneManager/ISceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/SceneManager/SceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/World/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -50,6 +91,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -65,10 +109,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6004">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="6004" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -84,6 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599905924650</updated>
       <workItem from="1599905932833" duration="315000" />
+      <workItem from="1599910425635" duration="15888000" />
     </task>
     <servers />
   </component>
@@ -102,8 +147,111 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599910428209">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599910428209" />
+    <state width="1141" height="612" key="DebuggerActiveHint" timestamp="1599940790476">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1141" height="612" key="DebuggerActiveHint/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940790476" />
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.0.center" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.0.left" timestamp="1599940867440">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867440" />
+    <state width="1877" height="379" key="GridCell.Tab.0.right" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.1.center" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.1.left" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.1.right" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.2.bottom" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.2.center" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.2.left" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.2.right" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.3.bottom" timestamp="1599940867442">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867442" />
+    <state width="1877" height="379" key="GridCell.Tab.3.center" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.3.left" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state width="1877" height="379" key="GridCell.Tab.3.right" timestamp="1599940867441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599940867441" />
+    <state x="727" y="249" key="RiderGenerateDialog" timestamp="1599916936566">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="727" y="249" key="RiderGenerateDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599916936566" />
+    <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599917459799">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1599917459799" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Infrastructure/ServiceLocator.cs</url>
+          <line>102</line>
+          <properties documentPath="D:\repos\foodbattle\foodbattle\Assets\Scripts\Gameplay\Infrastructure\ServiceLocator.cs" initialLine="102">
+            <startOffsets>
+              <option value="3518" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3519" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
