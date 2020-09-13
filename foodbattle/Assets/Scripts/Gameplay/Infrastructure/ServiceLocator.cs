@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using FoodBattle.Gameplay.Infrastructure.Abstract;
 using FoodBattle.Gameplay.Infrastructure.Attributes;
-using UnityEngine;
 
 namespace FoodBattle.Gameplay.Infrastructure
 {
@@ -33,58 +31,80 @@ namespace FoodBattle.Gameplay.Infrastructure
                     if (_instance == null)
                     {
                         _instance = new ServiceLocator();
-                    }
+                    } 
                 }
-
+                
                 return _instance;
             }
         }
 
         public T Resolve<T>()
         {
-            if (_instantiatedServices.ContainsKey(typeof(T)))
-            {
-                return (T) _instantiatedServices[typeof(T)].First();
-            }
-
-            try
-            {
-                var constructor = _serviceTypes[typeof(T)].First().GetConstructor(new Type[0]);
-                Debug.Assert(constructor != null, "Cannot find a suitable constructor for " + typeof(T));
-
-                var service = (T) constructor.Invoke(null);
-                _instantiatedServices.Add(typeof(T), new List<object> {service});
-
-                return service;
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new ApplicationException("The requested service is not registered");
-            }
+            return ResolveMultiple<T>().First();
         }
 
         public IEnumerable<T> ResolveMultiple<T>()
         {
             if (_instantiatedServices.ContainsKey(typeof(T)))
             {
-                return (IEnumerable<T>) _instantiatedServices[typeof(T)].First();
+                return _instantiatedServices[typeof(T)].Cast<T>();
             }
 
             try
             {
-                var constructors = _serviceTypes[typeof(T)].Select(s=> s.GetConstructor(new Type[0]));
-                Debug.Assert(constructors.Any(), "Cannot find a suitable constructor for " + typeof(T));
-
-                var services = constructors.Select(constructor => constructor.Invoke(null)).ToList();
-
-                _instantiatedServices.Add(typeof(T), services);
-
-                return (IEnumerable<T>)services;
+                _instantiatedServices.Add(typeof(T), InitTypes(typeof(T)));
+                return _instantiatedServices[typeof(T)].Cast<T>();
             }
             catch (KeyNotFoundException)
             {
                 throw new ApplicationException("The requested service is not registered");
             }
+        }
+        
+        private IEnumerable<object> InitTypes(Type contract)
+        {
+            var typesToCreate = _serviceTypes[contract];
+            return typesToCreate.Select(typeToCreate => InternalResolve(typeToCreate));
+        }
+
+        private object InternalResolve(Type typeToResolve)
+        {
+            var constructors = typeToResolve.GetConstructors();
+            if (!constructors.Any())
+            {
+                throw new ApplicationException($"Cannot find a suitable constructor for {typeToResolve}");
+            }
+
+            if (constructors.Length > 1)
+            {
+                throw new ApplicationException($"[{nameof(ServiceLocator)}]: Should not have multiple constructors for {typeToResolve}");
+            }
+
+            var constructor = constructors[0];
+            if (!constructor.IsPublic)
+            {
+                throw new ApplicationException($"[{nameof(ServiceLocator)}]: Should have public constructor for {typeToResolve}");
+            }
+
+            var parameters = constructor.GetParameters().OrderBy(param => param.Position);
+            if (!parameters.Any())
+            {
+                return constructor.Invoke(null);
+            }
+
+            var initedParameters = new List<object>();
+            foreach (var parameter in parameters)
+            {
+                if (_instantiatedServices.ContainsKey(parameter.ParameterType))
+                {
+                    initedParameters.Add(_instantiatedServices[parameter.ParameterType].First());
+                    continue;
+                }
+                
+                initedParameters.Add(InternalResolve(parameter.ParameterType));
+            }
+
+            return constructor.Invoke(initedParameters.ToArray());
         }
 
         private void Init()
@@ -96,7 +116,7 @@ namespace FoodBattle.Gameplay.Infrastructure
             foreach (var contract in contracts)
             {
                 var services = AppDomain.CurrentDomain.GetAssemblies()
-                    .SelectMany(s => s.GetTypes()).Where(p => p.IsAssignableFrom(contract) && Attribute.GetCustomAttribute(p, typeof(ServiceAttribute)) != null);
+                    .SelectMany(s => s.GetTypes()).Where(p => contract.IsAssignableFrom(p) && Attribute.GetCustomAttribute(p, typeof(ServiceAttribute)) != null);
                 
                 _serviceTypes.Add(contract, services);
             }

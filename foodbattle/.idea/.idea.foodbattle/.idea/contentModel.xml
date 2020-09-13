@@ -27,6 +27,9 @@
               <e p="EventBus.cs" t="Include" />
               <e p="ServiceLocator.cs" t="Include" />
             </e>
+            <e p="Logging" t="Include">
+              <e p="ILogger.cs" t="Include" />
+            </e>
             <e p="World" t="Include">
               <e p="GameManager.cs" t="Include" />
             </e>

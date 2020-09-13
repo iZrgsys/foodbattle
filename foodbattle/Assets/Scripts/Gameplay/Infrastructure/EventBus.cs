@@ -6,6 +6,5 @@ namespace FoodBattle.Gameplay.Infrastructure
     [Service]
     internal class EventBus : IEventBus
     {
-        
     }
 }
