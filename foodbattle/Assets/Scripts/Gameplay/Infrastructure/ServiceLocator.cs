@@ -64,7 +64,7 @@ namespace FoodBattle.Gameplay.Infrastructure
         private IEnumerable<object> InitTypes(Type contract)
         {
             var typesToCreate = _serviceTypes[contract];
-            return typesToCreate.Select(typeToCreate => InternalResolve(typeToCreate));
+            return typesToCreate.Select(InternalResolve);
         }
 
         private object InternalResolve(Type typeToResolve)
@@ -86,25 +86,25 @@ namespace FoodBattle.Gameplay.Infrastructure
                 throw new ApplicationException($"[{nameof(ServiceLocator)}]: Should have public constructor for {typeToResolve}");
             }
 
-            var parameters = constructor.GetParameters().OrderBy(param => param.Position);
+            var parameters = constructor.GetParameters().OrderBy(param => param.Position).ToList();
             if (!parameters.Any())
             {
                 return constructor.Invoke(null);
             }
 
-            var initedParameters = new List<object>();
+            var objects = new List<object>();
             foreach (var parameter in parameters)
             {
                 if (_instantiatedServices.ContainsKey(parameter.ParameterType))
                 {
-                    initedParameters.Add(_instantiatedServices[parameter.ParameterType].First());
+                    objects.Add(_instantiatedServices[parameter.ParameterType].First());
                     continue;
                 }
                 
-                initedParameters.Add(InternalResolve(parameter.ParameterType));
+                objects.Add(InternalResolve(parameter.ParameterType));
             }
 
-            return constructor.Invoke(initedParameters.ToArray());
+            return constructor.Invoke(objects.ToArray());
         }
 
         private void Init()

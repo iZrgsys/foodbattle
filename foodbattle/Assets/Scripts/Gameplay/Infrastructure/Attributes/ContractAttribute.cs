@@ -2,7 +2,7 @@
 
 namespace FoodBattle.Gameplay.Infrastructure.Attributes
 {
-    [AttributeUsage(AttributeTargets.Interface)]
+    [AttributeUsage(AttributeTargets.Interface, AllowMultiple = false, Inherited = false)]
     internal class ContractAttribute : Attribute
     {
         
