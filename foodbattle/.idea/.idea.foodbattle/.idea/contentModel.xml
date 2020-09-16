@@ -2,46 +2,64 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\micka\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\micka\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_foodbattle.1196943339.00" t="ExcludeRecursive" />
-    <e p="D:\repos\foodbattle\foodbattle" t="IncludeRecursive">
+    <e p="C:\Users\micka\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_foodbattle.-1619503458.00" t="ExcludeRecursive" />
+    <e p="D:\Repositories\foodbattle\foodbattle" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="Editor" t="Include">
-            <e p="PersistentSceneLoader.cs" t="Include" />
+        <e p="Modules" t="Include">
+          <e p="Game" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="PersistentSceneLoader.cs" t="Include" />
+              </e>
+              <e p="Gameplay" t="Include">
+                <e p="Base" t="Include">
+                  <e p="MonoSingleton.cs" t="Include" />
+                </e>
+                <e p="Character" t="Include">
+                  <e p="CharacterData.cs" t="Include" />
+                  <e p="GameCharacter.cs" t="Include" />
+                  <e p="StatsSystem" t="Include">
+                    <e p="CharacterStat.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Infrastructure" t="Include">
+                  <e p="Abstract" t="Include">
+                    <e p="IEventBus.cs" t="Include" />
+                    <e p="IServiceLocator.cs" t="Include" />
+                  </e>
+                  <e p="Attributes" t="Include">
+                    <e p="ContractAttribute.cs" t="Include" />
+                    <e p="ServiceAttribute.cs" t="Include" />
+                  </e>
+                  <e p="EventBus.cs" t="Include" />
+                  <e p="Models" t="Include">
+                    <e p="ServiceInfo.cs" t="Include" />
+                  </e>
+                  <e p="ServiceLocator.cs" t="Include" />
+                </e>
+                <e p="InputSystem" t="Include">
+                  <e p="Abstract" t="Include">
+                    <e p="IUserinputservice.cs" t="Include" />
+                  </e>
+                  <e p="PlayerInputReceiver.cs" t="Include" />
+                  <e p="UserInputComponent.cs" t="Include" />
+                  <e p="UserInputEventArgs.cs" t="Include" />
+                  <e p="UserInputService.cs" t="Include" />
+                </e>
+                <e p="Logging" t="Include">
+                  <e p="ILogger.cs" t="Include" />
+                </e>
+                <e p="World" t="Include">
+                  <e p="GameManager.cs" t="Include" />
+                </e>
+              </e>
+            </e>
           </e>
-          <e p="Gameplay" t="Include">
-            <e p="Base" t="Include">
-              <e p="MonoSingleton.cs" t="Include" />
-            </e>
-            <e p="Character" t="Include">
-              <e p="CharacterData.cs" t="Include" />
-              <e p="GameCharacter.cs" t="Include" />
-              <e p="StatsSystem" t="Include">
-                <e p="CharacterStat.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Infrastructure" t="Include">
-              <e p="Abstract" t="Include">
-                <e p="IEventBus.cs" t="Include" />
-                <e p="IServiceLocator.cs" t="Include" />
-              </e>
-              <e p="Attributes" t="Include">
-                <e p="ContractAttribute.cs" t="Include" />
-                <e p="ServiceAttribute.cs" t="Include" />
-              </e>
-              <e p="EventBus.cs" t="Include" />
-              <e p="Models" t="Include">
-                <e p="ServiceInfo.cs" t="Include" />
-              </e>
-              <e p="ServiceLocator.cs" t="Include" />
-            </e>
-            <e p="Logging" t="Include">
-              <e p="ILogger.cs" t="Include" />
-            </e>
-            <e p="World" t="Include">
-              <e p="GameManager.cs" t="Include" />
+          <e p="Landing" t="Include">
+            <e p="Scenes" t="Include">
+              <e p="SceneConfig.cs" t="Include" />
             </e>
           </e>
         </e>

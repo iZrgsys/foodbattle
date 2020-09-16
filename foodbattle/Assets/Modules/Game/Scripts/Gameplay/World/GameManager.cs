@@ -5,7 +5,7 @@ using FoodBattle.Gameplay.Infrastructure.Abstract;
 
 namespace FoodBattle.Gameplay.World
 {
-    public class GameManager : MonoSingleton<GameManager>
+    internal class GameManager : MonoSingleton<GameManager>
     {
 
     }
