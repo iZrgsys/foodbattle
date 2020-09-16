@@ -9,8 +9,8 @@ namespace FoodBattle.Gameplay.InputSystem.Abstract
     [Contract]
     public interface IUserInputService
     {
-        event UserInputEventHandler OnMovementInput;
-        event UserInputEventHandler OnLookingInput;
+        event UserInputEventHandler MovementInput;
+        event UserInputEventHandler LookingInput;
 
         void UpdateMovementInput(Vector2 input);
         void UpdateLookingInput(Vector2 input);
