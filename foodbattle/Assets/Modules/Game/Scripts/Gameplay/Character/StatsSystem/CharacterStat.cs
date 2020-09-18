@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FoodBattle.Gameplay.Character.StatsSystem
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.Character.StatsSystem
 {
     [Serializable]
     public class CharacterStat

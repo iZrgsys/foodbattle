@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace FoodBattle.Gameplay.InputSystem
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem
 {
     public class UserInputEventArgs : EventArgs
     {

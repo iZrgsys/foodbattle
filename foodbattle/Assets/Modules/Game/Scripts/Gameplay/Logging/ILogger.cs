@@ -1,4 +1,4 @@
-﻿namespace FoodBattle.Gameplay.Logging
+﻿namespace FoodBattle.Modules.Game.Scripts.Gameplay.Logging
 {
     public interface ILogger<T> 
     {

@@ -1,10 +1,9 @@
-﻿using System;
-using FoodBattle.Gameplay.Infrastructure;
-using FoodBattle.Gameplay.InputSystem.Abstract;
+﻿using FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure;
+using FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem.Abstract;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace FoodBattle.Gameplay.InputSystem
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem
 {
     internal class PlayerInputReceiver : MonoBehaviour
     {

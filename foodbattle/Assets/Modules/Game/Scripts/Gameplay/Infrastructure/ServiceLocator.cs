@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using FoodBattle.Gameplay.Infrastructure.Abstract;
-using FoodBattle.Gameplay.Infrastructure.Attributes;
+using FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure.Abstract;
+using FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem;
+using FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem.Abstract;
+using Ninject;
 
-namespace FoodBattle.Gameplay.Infrastructure
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure
 {
     internal sealed class ServiceLocator : IServiceLocator
     {
         private static IServiceLocator _instance;
-        private readonly IDictionary<Type, IEnumerable<Type>> _serviceTypes;
-        private readonly IDictionary<Type, IEnumerable<object>> _instantiatedServices;
+        private readonly IDictionary<Type, Type> _serviceTypes;
+        private readonly IKernel _kernel;
         
         private static readonly object Lock = new object();
 
         private ServiceLocator()
         {
-            _serviceTypes = new Dictionary<Type, IEnumerable<Type>>();
-            _instantiatedServices = new Dictionary<Type, IEnumerable<object>>();
+            _serviceTypes = new Dictionary<Type, Type>();
+            _kernel = new StandardKernel();
             
             Init();
         }
@@ -40,86 +41,12 @@ namespace FoodBattle.Gameplay.Infrastructure
 
         public T Resolve<T>()
         {
-            return ResolveMultiple<T>().First();
-        }
-
-        public IEnumerable<T> ResolveMultiple<T>()
-        {
-            if (_instantiatedServices.ContainsKey(typeof(T)))
-            {
-                return _instantiatedServices[typeof(T)].Cast<T>();
-            }
-
-            try
-            {
-                _instantiatedServices.Add(typeof(T), InitTypes(typeof(T)));
-                return _instantiatedServices[typeof(T)].Cast<T>();
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new ApplicationException("The requested service is not registered");
-            }
-        }
-        
-        private IEnumerable<object> InitTypes(Type contract)
-        {
-            var typesToCreate = _serviceTypes[contract];
-            return typesToCreate.Select(InternalResolve);
-        }
-
-        private object InternalResolve(Type typeToResolve)
-        {
-            var constructors = typeToResolve.GetConstructors();
-            if (!constructors.Any())
-            {
-                throw new ApplicationException($"Cannot find a suitable constructor for {typeToResolve}");
-            }
-
-            if (constructors.Length > 1)
-            {
-                throw new ApplicationException($"[{nameof(ServiceLocator)}]: Should not have multiple constructors for {typeToResolve}");
-            }
-
-            var constructor = constructors[0];
-            if (!constructor.IsPublic)
-            {
-                throw new ApplicationException($"[{nameof(ServiceLocator)}]: Should have public constructor for {typeToResolve}");
-            }
-
-            var parameters = constructor.GetParameters().OrderBy(param => param.Position).ToList();
-            if (!parameters.Any())
-            {
-                return constructor.Invoke(null);
-            }
-
-            var objects = new List<object>();
-            foreach (var parameter in parameters)
-            {
-                if (_instantiatedServices.ContainsKey(parameter.ParameterType))
-                {
-                    objects.Add(_instantiatedServices[parameter.ParameterType].First());
-                    continue;
-                }
-                
-                objects.Add(InternalResolve(parameter.ParameterType));
-            }
-
-            return constructor.Invoke(objects.ToArray());
+            return _kernel.Get<T>();
         }
 
         private void Init()
         {
-            var contracts = AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(s => s.GetTypes()
-                    .Where(p=>Attribute.GetCustomAttribute(p, typeof(ContractAttribute)) != null));
-
-            foreach (var contract in contracts)
-            {
-                var services = AppDomain.CurrentDomain.GetAssemblies()
-                    .SelectMany(s => s.GetTypes()).Where(p => contract.IsAssignableFrom(p) && Attribute.GetCustomAttribute(p, typeof(ServiceAttribute)) != null);
-                
-                _serviceTypes.Add(contract, services);
-            }
+            _kernel.Bind<IUserInputService>().To(typeof(UserInputService)).InSingletonScope();
         }
     }
 }

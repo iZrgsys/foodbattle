@@ -1,11 +1,10 @@
 ﻿using FoodBattle.Modules.Landing.Scenes;
 using UnityEditor;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace FoodBattle.Editor
+namespace FoodBattle.Modules.Game.Scripts.Editor
 {
-    [InitializeOnLoad]
+    //[InitializeOnLoad]
     public class PersistentSceneLoader
     {
         static PersistentSceneLoader()
@@ -18,8 +17,8 @@ namespace FoodBattle.Editor
             if (state == PlayModeStateChange.EnteredPlayMode)
             {
                 var currentScene = SceneManager.GetActiveScene();
-                SceneManager.LoadSceneAsync(SceneConfig.PersistentSceneName);
-                SceneManager.LoadSceneAsync(currentScene.name, LoadSceneMode.Additive);
+                SceneManager.LoadScene(SceneConfig.PersistentSceneName);
+                SceneManager.LoadScene(currentScene.name, LoadSceneMode.Additive);
             }
         }
     }    

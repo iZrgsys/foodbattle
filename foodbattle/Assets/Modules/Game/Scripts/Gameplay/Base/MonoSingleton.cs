@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace FoodBattle.Gameplay.Base
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.Base
 {
     /// <summary>
     /// Inherit from this base class to create a singleton.

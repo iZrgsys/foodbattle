@@ -1,7 +1,7 @@
-﻿using FoodBattle.Gameplay.Infrastructure.Abstract;
-using FoodBattle.Gameplay.Infrastructure.Attributes;
+﻿using FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure.Abstract;
+using FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure.Attributes;
 
-namespace FoodBattle.Gameplay.Infrastructure
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure
 {
     [Service]
     internal class EventBus : IEventBus

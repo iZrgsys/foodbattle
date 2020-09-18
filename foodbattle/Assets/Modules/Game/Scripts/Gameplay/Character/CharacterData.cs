@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace FoodBattle.Gameplay.Character
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.Character
 {
     [Serializable]
     public class CharacterData

@@ -1,9 +1,6 @@
-﻿using System;
-using FoodBattle.Gameplay.Base;
-using FoodBattle.Gameplay.Infrastructure;
-using FoodBattle.Gameplay.Infrastructure.Abstract;
+﻿using FoodBattle.Modules.Game.Scripts.Gameplay.Base;
 
-namespace FoodBattle.Gameplay.World
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.World
 {
     internal class GameManager : MonoSingleton<GameManager>
     {

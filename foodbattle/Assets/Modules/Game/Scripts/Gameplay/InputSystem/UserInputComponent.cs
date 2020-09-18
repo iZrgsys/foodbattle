@@ -1,19 +1,19 @@
-﻿using System;
-using FoodBattle.Gameplay.Infrastructure;
-using FoodBattle.Gameplay.InputSystem.Abstract;
+﻿using FoodBattle.Modules.Game.Scripts.Gameplay.Infrastructure;
+using FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem.Abstract;
 using UnityEngine;
 
-namespace FoodBattle.Gameplay.InputSystem
+namespace FoodBattle.Modules.Game.Scripts.Gameplay.InputSystem
 {
-    public class UserInputComponent : MonoBehaviour
+    internal class UserInputComponent : MonoBehaviour
     {
         private IUserInputService _inputService;
 
         private void Awake()
         {
             _inputService = ServiceLocator.Instance.Resolve<IUserInputService>();
-            _inputService.MovementInput += InputService_OnMovementInput;
-            _inputService.LookingInput += InputService_OnLookingInput;
+            
+            _inputService.OnMovementInput += InputService_OnMovementInput;
+            _inputService.OnLookingInput += InputService_OnLookingInput;
         }
 
         private void InputService_OnMovementInput(object sender, UserInputEventArgs args)
@@ -25,6 +25,23 @@ namespace FoodBattle.Gameplay.InputSystem
         {
             Debug.Log($"[{nameof(InputService_OnLookingInput)}]: input: {args.UserInput}" );
         }
-        
+
+        private void OnEnable()
+        {
+            _inputService.OnMovementInput += InputService_OnMovementInput;
+            _inputService.OnLookingInput += InputService_OnLookingInput;
+        }
+
+        private void OnDisable()
+        {
+            _inputService.OnMovementInput -= InputService_OnMovementInput;
+            _inputService.OnLookingInput -= InputService_OnLookingInput;
+        }
+
+        private void OnDestroy()
+        {
+            _inputService.OnMovementInput -= InputService_OnMovementInput;
+            _inputService.OnLookingInput -= InputService_OnLookingInput;
+        }
     }
 }
