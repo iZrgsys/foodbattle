@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b413f03e-26ae-4acb-8982-52c99c0f4f58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/FoodBattle.Core.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/FoodBattle.Game.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/FoodBattle.Game.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/FoodBattle.UI.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/FoodBattle.UI.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scenes/MainMenu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scenes/MainMenu.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/IMainMenuController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/IMainMenuController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersistentScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PersistentScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/IMainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/Bootstrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Core/Landing.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hjIEjX9HYaUa0iaJNcB7NDArHW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b413f03e-26ae-4acb-8982-52c99c0f4f58" name="Default Changelist" comment="" />
+      <created>1600517967418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600517967418</updated>
+      <workItem from="1600517972395" duration="266000" />
+      <workItem from="1600518267871" duration="77000" />
+      <workItem from="1600518383017" duration="317000" />
+      <workItem from="1600518763664" duration="373000" />
+      <workItem from="1600551400315" duration="633000" />
+      <workItem from="1600618285071" duration="3938000" />
+      <workItem from="1600692814348" duration="7413000" />
+      <workItem from="1600768984589" duration="5373000" />
+      <workItem from="1600846681948" duration="4047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="727" y="249" key="RiderGenerateDialog" timestamp="1600715786460">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="727" y="249" key="RiderGenerateDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1600715786460" />
+    <state x="623" y="227" key="search.everywhere.popup" timestamp="1600771105056">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1600771105056" />
+  </component>
+</project>

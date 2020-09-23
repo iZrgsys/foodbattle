@@ -1,0 +1,17 @@
+{
+    "name": "FoodBattle.Core",
+    "references": [
+        "GUID:220fe5d6a4e5ad6499bd12fd9b1e473d",
+        "GUID:c7dbaac24323b5e4e8bf7fc795386361",
+        "GUID:deeda23513e9bf54789e00d640b9d721"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
