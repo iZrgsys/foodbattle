@@ -1,7 +1,8 @@
 {
     "name": "FoodBattle.Game",
     "references": [
-        "GUID:c7dbaac24323b5e4e8bf7fc795386361"
+        "GUID:c7dbaac24323b5e4e8bf7fc795386361",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -18,25 +18,24 @@ namespace FoodBattle.Modules.Core
             {
                 case ScenesConfig.LandingSceneName:
                     break;
+                case ScenesConfig.MainMenuSceneName:
+                    break;
+                case ScenesConfig.TestSceneName:
+                    break;
                 default:
                     Debug.LogError($"Uknown scene loaded! - {scene.name}");
                     break;
             }
         }
 
-        public static void StartGame(bool openMainMenu = false)
+        public static void InitGame()
         {
             var serviceLocator = ServiceLocator.Instance;
             
             serviceLocator.Register<IInputService>(typeof(InputService));
-
-            if (openMainMenu)
-            {
-                OpenMainMenu();
-            }
         }
         
-        private static void OpenMainMenu()
+        public static void OpenMainMenu()
         {
             SceneManager.LoadSceneAsync(ScenesConfig.MainMenuSceneName, LoadSceneMode.Additive);
         }

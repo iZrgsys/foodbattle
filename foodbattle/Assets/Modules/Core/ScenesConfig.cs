@@ -5,5 +5,7 @@
         public const string LandingSceneName = "LandingScene";
 
         public const string MainMenuSceneName = "MainMenu";
+        
+        public const string TestSceneName = "TestLevel";
     }
 }

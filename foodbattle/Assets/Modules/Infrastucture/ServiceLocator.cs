@@ -6,13 +6,13 @@ namespace FoodBattle.Modules.Infrastucture
 {
     public class ServiceLocator : IServiceLocator
     {
-        private readonly IKernel _kernel;
-        private static IServiceLocator _instance;
+        private readonly IKernel m_kernel;
+        private static IServiceLocator m_instance;
         private static readonly object LockObject = new object();
 
         private ServiceLocator()
         {
-            _kernel = new StandardKernel();
+            m_kernel = new StandardKernel();
         }
 
         public static IServiceLocator Instance
@@ -21,24 +21,24 @@ namespace FoodBattle.Modules.Infrastucture
             {
                 lock (LockObject)
                 {
-                    if (_instance == null)
+                    if (m_instance == null)
                     {
-                        _instance = new ServiceLocator();
+                        m_instance = new ServiceLocator();
                     }
                 }
 
-                return _instance;
+                return m_instance;
             }
         }
 
         public T Resolve<T>()
         {
-            return _kernel.Get<T>();
+            return m_kernel.Get<T>();
         }
 
         public void Register<TInterface>(Type implementation)
         {
-            _kernel.Bind<TInterface>().To(implementation).InSingletonScope();
+            m_kernel.Bind<TInterface>().To(implementation).InSingletonScope();
         }
     }
 }

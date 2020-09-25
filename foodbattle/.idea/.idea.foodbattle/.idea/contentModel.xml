@@ -18,6 +18,7 @@
               <e p="InputSystem" t="Include">
                 <e p="IInputService.cs" t="Include" />
                 <e p="InputEventArgs.cs" t="Include" />
+                <e p="InputHandler.cs" t="Include" />
                 <e p="InputService.cs" t="Include" />
               </e>
             </e>
