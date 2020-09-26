@@ -2,7 +2,7 @@
 
 namespace FoodBattle.Modules.UI.MainMenu.Scripts
 {
-    internal class MainMenuView : MonoBehaviour
+    internal class MainMenuView : MonoBehaviour, IMainMenuController
     {
         
     }

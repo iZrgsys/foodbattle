@@ -10,6 +10,12 @@ namespace FoodBattle.Modules.Core
         static ApplicationManager()
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
+            SceneManager.sceneUnloaded += OnSceneUnloaded;
+        }
+
+        private static void OnSceneUnloaded(Scene scene)
+        {
+            Resources.UnloadUnusedAssets();
         }
 
         private static void OnSceneLoaded(Scene scene, LoadSceneMode arg1)
@@ -38,6 +44,13 @@ namespace FoodBattle.Modules.Core
         public static void OpenMainMenu()
         {
             SceneManager.LoadSceneAsync(ScenesConfig.MainMenuSceneName, LoadSceneMode.Additive);
+        }
+
+        public static void OpenLevelAdditive(string levelName)
+        {
+
+            SceneManager.UnloadSceneAsync(ScenesConfig.MainMenuSceneName);
+            SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace FoodBattle.Modules.Game.Scripts.InputSystem
 
         public void Fire()
         {
-            
+            m_inputService.FireInput();
         }
     }
 }

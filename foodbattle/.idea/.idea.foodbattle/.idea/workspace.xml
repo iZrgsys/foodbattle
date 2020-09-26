@@ -20,20 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b413f03e-26ae-4acb-8982-52c99c0f4f58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/Editor/EditorInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Core/Editor/EditorInitializer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modules/Game/Levels/TestLevel/ReflectionProbe-0.exr.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.foodbattle/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Core/Landing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Core/Landing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Core/LandingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Core/LandingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Game/FoodBattle.Game.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Game/FoodBattle.Game.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,25 +49,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/IMainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputEventArgs.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/Bootstrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/Abstract/IServiceLocator.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Core/Landing.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Infrastucture/ServiceLocator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/IInputService.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputService.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Core/ScenesConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Scripts/InputSystem/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/UI/MainMenu/Scripts/MainMenuView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Editor/PersistentSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Game/Editor/LandingSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Core/Editor/LandingSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Modules/Core/Editor/EditorInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs" />
       </list>
     </option>
@@ -80,6 +89,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -88,6 +99,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../Builds/FoodBattle\foodbattle.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Repositories\Builds\FoodBattle" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -97,10 +116,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13596">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="13596" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -127,6 +146,7 @@
       <workItem from="1600889011441" duration="944000" />
       <workItem from="1600933775626" duration="3740000" />
       <workItem from="1601018522595" duration="1564000" />
+      <workItem from="1601109149645" duration="4196000" />
     </task>
     <servers />
   </component>
@@ -152,6 +172,70 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.0.center" timestamp="1601112803740">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803740" />
+    <state width="1877" height="379" key="GridCell.Tab.0.left" timestamp="1601112803740">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803740" />
+    <state width="1877" height="379" key="GridCell.Tab.0.right" timestamp="1601112803740">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803740" />
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.1.center" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.1.left" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.1.right" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.2.bottom" timestamp="1601112803742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803742" />
+    <state width="1877" height="379" key="GridCell.Tab.2.center" timestamp="1601112803742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803742" />
+    <state width="1877" height="379" key="GridCell.Tab.2.left" timestamp="1601112803741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803741" />
+    <state width="1877" height="379" key="GridCell.Tab.2.right" timestamp="1601112803742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803742" />
+    <state width="1877" height="379" key="GridCell.Tab.3.bottom" timestamp="1601112803743">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803743" />
+    <state width="1877" height="379" key="GridCell.Tab.3.center" timestamp="1601112803742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803742" />
+    <state width="1877" height="379" key="GridCell.Tab.3.left" timestamp="1601112803742">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803742" />
+    <state width="1877" height="379" key="GridCell.Tab.3.right" timestamp="1601112803743">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="379" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601112803743" />
     <state x="727" y="249" key="RiderGenerateDialog" timestamp="1600943883293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -165,5 +249,37 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1600771105056" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Modules/Core/ApplicationManager.cs</url>
+          <line>49</line>
+          <properties documentPath="D:\Repositories\foodbattle\foodbattle\Assets\Modules\Core\ApplicationManager.cs" initialLine="49">
+            <startOffsets>
+              <option value="1488" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1489" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Modules/Core/Editor/EditorInitializer.cs</url>
+          <line>20</line>
+          <properties documentPath="D:\Repositories\foodbattle\foodbattle\Assets\Modules\Core\Editor\EditorInitializer.cs" initialLine="21">
+            <startOffsets>
+              <option value="532" />
+            </startOffsets>
+            <endOffsets>
+              <option value="581" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
